@@ -1,0 +1,342 @@
+.arbers-list {
+  max-width: 100%;
+}
+
+.arbers-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.arbers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.header-content h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.header-content p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.arbers-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-controls label {
+  font-weight: 500;
+  color: #333;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  min-width: 180px;
+}
+
+.stats-summary {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.stats-summary .stat {
+  color: #666;
+}
+
+.stats-summary .stat strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.arbers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.arber-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.arber-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.arber-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.arber-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.arber-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.arber-id {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #999;
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.arber-card-content {
+  margin-bottom: 20px;
+}
+
+.arber-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.recent-opportunities {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 16px;
+}
+
+.recent-opportunities h4 {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+.opportunities-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.opportunity-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.opportunity-title {
+  color: #333;
+  font-weight: 500;
+  flex: 1;
+  margin-right: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.opportunity-profit {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.arber-card-actions {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.action-buttons .btn {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+/* Empty State */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.empty-icon {
+  font-size: 80px;
+  margin-bottom: 24px;
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin-bottom: 32px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Status-specific styling */
+.arber-card.status-running {
+  border-left: 4px solid #28a745;
+}
+
+.arber-card.status-paused {
+  border-left: 4px solid #ffc107;
+}
+
+.arber-card.status-postulating,
+.arber-card.status-placing {
+  border-left: 4px solid #7b1fa2;
+}
+
+.arber-card.status-error,
+.arber-card.status-closed {
+  border-left: 4px solid #dc3545;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .arbers-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .arbers-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .arbers-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .filter-controls {
+    justify-content: space-between;
+  }
+
+  .stats-summary {
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .arbers-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .arber-card {
+    padding: 20px;
+  }
+
+  .arber-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .action-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .arber-card-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .arber-info {
+    align-items: flex-start;
+  }
+
+  .action-buttons .btn {
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .stats-summary {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

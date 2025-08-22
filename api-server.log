@@ -1,0 +1,17 @@
+🚀 Surebet API Server running on http://localhost:3001
+📊 Available endpoints:
+  GET  /api/ping
+  GET  /api/arbers
+  GET  /api/arbers/:id
+  POST /api/arbers
+  PUT  /api/arbers/:id
+  DELETE /api/arbers/:id
+  POST /api/arbers/:id/pause
+  POST /api/arbers/:id/resume
+  GET  /api/bookies
+  GET  /api/statistics
+  GET  /api/opportunities/history
+  GET  /api/websocket/status
+Added opportunity to Tennis H2H Arber: Liverpool vs Arsenal - Profit: 34.66€
+Added opportunity to Tennis H2H Arber: Real Madrid vs Barcelona - Profit: 17.07€
+Added opportunity to Tennis H2H Arber: Liverpool vs Arsenal - Profit: 24.89€
