@@ -1,0 +1,6 @@
+2025-08-22 08:23:54,649 INFO RPC interface 'supervisor' initialized
+2025-08-22 08:23:54,649 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2025-08-22 08:23:54,652 INFO daemonizing the supervisord process
+2025-08-22 08:23:54,653 INFO supervisord started with pid 3542
+2025-08-22 08:23:55,657 INFO spawned: 'surebet-api' with pid 3546
+2025-08-22 08:23:57,029 INFO success: surebet-api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

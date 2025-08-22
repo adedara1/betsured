@@ -1,0 +1,22 @@
+{
+  "name": "surebet-api-mock",
+  "version": "1.0.0",
+  "description": "Mock API server pour l'interface Surebet",
+  "main": "api-server.js",
+  "scripts": {
+    "start": "node api-server.js",
+    "dev": "nodemon api-server.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": ["surebet", "arbitrage", "api", "mock", "express"],
+  "author": "Surebet UI",
+  "license": "MIT"
+}
