@@ -1,3 +1,8 @@
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/adedara1/betsured)
+
+
+
+
 
 <p align="center">
   <img width="369" height="84" src="https://github.com/user-attachments/assets/a21cff5d-9433-4015-91a9-867642b2c89c">
